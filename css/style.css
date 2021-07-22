@@ -1,0 +1,143 @@
+body {
+    color: #000004;
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    background: #fbfef9; 
+    margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background: unset;
+    }
+}
+
+/* ----------- Cabeçalho -----------------
+*/
+
+.cabecalho {
+    background-color:#0c6291;
+    color: #fbfef9;
+    padding: 64px 0;
+}
+
+.cabecalho_container {
+    width: 100%;
+    max-width: 750px;
+    padding: 0 25px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.cabecalho_img {
+    height: 160px;
+    margin-right: 16px;
+}
+
+.cabecalho_conteudo {
+    flex: 1;
+}
+
+.cabecalho_titulo {
+    font-size: 55px;
+    font-family: 'Delius', cursive;
+}
+
+.cabecalho_form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cabecalho_informacoes {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cabecalho_campo {
+    flex: 1;
+    height: 35px;
+    padding: 0 16px;
+    border-radius: 2px;
+    margin-right: 3px;
+    border: none;
+}
+
+.cabecalho_botao {
+    width: 120px;
+    border: none;
+    border-radius: 2px;
+    background-color: #fbfef9;
+    color: #000004;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .cabecalho_titulo {
+        text-align: center;
+    }
+
+    .cabecalho_botao {
+        width: unset;
+    }
+}
+
+/* --------- Principal -------------
+*/
+
+.principal {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.principal_coluna {
+    flex: 1;
+    min-width: 300px;
+}
+
+.principal_secao {
+    margin-bottom: 50px;
+    padding: 0 10px;
+}
+
+.principal_titulo {
+    padding: 8px 0;
+    text-align: center;
+    font-size: 28px;
+    color: #fbfef9;
+    background-color: #0c6291;
+    border-radius: 5px;
+}
+
+.principal_lista {
+    list-style: none;
+    padding: 0 8px;
+}
+
+.principal_lista li label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.principal_lista input {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+
+.principal_lista input:checked + span {
+    text-decoration: line-through;
+}
+
+.principal_lista span {
+    font-size: 20px;
+}

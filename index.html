@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./imagens/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./imagens/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./imagens/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./imagens/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="Watch Checklist"/>
+    <meta name="msapplication-TileColor" content="#540D6E" />
+    <meta name="msapplication-TileImage" content="./imagens/mstile-144x144.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Checklist</title>
+</head>
+<body>
+    
+    <header class="cabecalho">
+
+        <div class="cabecalho_container">
+
+            <img class="cabecalho_img" src="./img/menina_check.svg" alt="">
+
+            <div class="cabecalho_conteudo">
+                <h1 class="cabecalho_titulo">Checklist</h1>
+                <form id="formulario_informacoes" class="cabecalho_form">
+                    <div class="cabecalho_informacoes">
+                        <input id="cabecalho_campo_texto" class="cabecalho_campo" type="text" placeholder="Insira uma tarefa a ser feita" name="nome">
+                        <button class="cabecalho_botao" type="submit">Inserir</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="principal">
+        <div class="principal_coluna">
+            <div class="principal_secao">
+                <h2 class="principal_titulo">Tarefas a fazer</h2>
+                <ul id="tarefas_lista" class="principal_lista">
+                </ul>
+            </div>
+
+            <div class="principal_secao">
+                <h2 class="principal_titulo">Tarefas feitas</h2>
+                <ul id="tarefas_feitas_lista" class="principal_lista">
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
